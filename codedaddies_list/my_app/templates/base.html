@@ -1,9 +1,63 @@
+{% load static %}
 <html>
 <head>
     <title> Codedaddies List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css"
+          integrity="sha256-qj3p6P1fJIV+Ndv7RW1ovZI2UhOuboj9GcODzcNFIN8=" crossorigin="anonymous"/>
 </head>
 <body>
-<h2>Testing to See if this works</h2>
+
+<nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo"> Codedaddies List</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+
+</nav>
+<div class="container">
+    <h3 style="text-align: center"> What do you want to search for on codedaddies List?</h3>
+    <div class="row">
+        <div class="col s4">
+            <!-- Promo content 1 goes here-->
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E73">flash_on</i>
+                <p>First Alban Web scraper </p>
+                <p class="light center"> Scrape away right here with a beautiful GUI</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <!--promo content 2 goes here-->
+
+            <div class="center">
+                <i class="large material-icons" style="color: orange">camera</i>
+                <p> Filter your searches</p>
+                <p class=" light center"> We built in functionality to filter based on pricing</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <!--Promo content 3 goes here-->
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p> A Much nicer front-end to Abigail</p>
+                <p class="light center"> We built this with Love</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% block content %}
+
+{% endblock content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js"
+        integrity="sha256-SrBfGi+Zp2LhAvy9M1bWOCXztRU9Ztztxmu5BcYPcPE=" crossorigin="anonymous"></script>
 
 </body>
 
